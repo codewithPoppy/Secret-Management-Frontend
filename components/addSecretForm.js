@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogContent,
   DialogActions,
-  IconButton,
+  Typography,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import Link from "next/link";
@@ -57,7 +57,8 @@ export default function AddSecretForm() {
   return (
     <>
       <Container sx={{ mt: 3, position: "relative" }}>
-        <Box>
+        <Typography variant="h5">Add a secret</Typography>
+        <Box sx={{ mt: 3 }}>
           <TextField
             name="secret"
             error={!!errors.secretText}
